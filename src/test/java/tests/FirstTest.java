@@ -7,5 +7,6 @@ public class FirstTest {
     @Test
     public void CalculatorTest(){
         Assert.assertEquals(475, 400 + 75);
+        Assert.assertEquals(500, 450 + 50);
     }
 }
