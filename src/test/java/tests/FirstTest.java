@@ -1,4 +1,5 @@
-package tests;
+/*package tests;
+
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,3 +11,5 @@ public class FirstTest {
         Assert.assertEquals(550, 450 + 100);
     }
 }
+
+*/
