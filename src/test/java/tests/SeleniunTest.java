@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.ContactUsPage;
 import utils.PropertyReader;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -25,11 +26,11 @@ class SeleniumTest {
                 driver = new ChromeDriver();
                 break;
             }
-//            case ("firefox"): {
-//                WebDriverManager.firefoxdriver().setup();
-//                driver = new FirefoxDriver();
-//                break;
-//            }
+            case ("firefox"): {
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+                break;
+            }
             default:
                 throw new InvalidArgumentException("cant initialize driver, available options is: chrome, firefox");
         }
